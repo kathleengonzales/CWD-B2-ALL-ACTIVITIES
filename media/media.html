@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Media</title>
+</head>
+<body class="grey darken-2">
+    <div class="container">
+        <h1 class="amber-text">Media CSS</h1>
+        <div class="row">
+            <div class="col s12 m6">
+                <img src="images/tay1.jpg" alt="" class="responsive-img z-depth-5">
+            </div>
+            <div class="col s12 m6">
+                <img src="images/tay5.jpg" alt="" class="responsive-img circle z-depth-5">
+           </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-5">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="images/tay4.jpg" alt="" class="responsive-img circle z-depth-5">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                This is a square image. Add the "circle" class to it to make it appear circular.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Videos -->
+    <div class="row">
+        <div class="col s12">
+            <br class="video-container">
+                <iframe width="853" height="480" style="border-radius:30px ;" src="https://youtu.be/J4R3ynC4OQE " 
+                title="Taylor Swift - Anti-Hero" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+    </div>
+    <br class="row">
+        <div class="col s12 m6">
+        </div>
+        <br></br>
+        <div class="col s12 m6">
+            <img src="images/tay2.jpg" alt=""
+            class="materialboxed responsive-img">
+        </div>
+        <br></br>
+        <div class="col s12 m6">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="images/tay8.jpg" alt="">
+                        <div class="caption center-align white-text">
+                            <h3>TAYLOR SWIFT 1</h3>
+                            <h5 class="light text-lighten-3">ALBUM 1</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/tay7.png" alt="">
+                        <div class="caption center-align white-text">
+                            <h3>TAYLOR SWIFT 2</h3>
+                            <h5 class="light text-lighten-3">ALBUM 2</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/tay6.jpg" alt="">
+                        <div class="caption center-align white-text">
+                            <h3>TAYLOR SWIFT 3</h3>
+                            <h5 class="light text-lighten-3">ALBUM 3</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/tayl1.jpg" alt="">
+                        <div class="caption center-align white-text">
+                            <h3>TAYLOR SWIFT 4</h3>
+                            <h5 class="light text-lighten-3">ALBUM 4</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/tayl3.jpg" alt="">
+                        <div class="caption center-align white-text">
+                            <h3>TAYLOR SWIFT 5</h3>
+                            <h5 class="light text-lighten-3">ALBUM 5</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<br></br>
+
+    
+ 
+
+
+  
+  
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        // Init materialbox
+        $('.materialboxed').materialbox();
+        inDuration: 1000
+        outDuration: 4000
+        // Init Slider
+        $('.slider').slider({
+            indicator: true,
+            height: 1000,
+            interval: 6000
+        });
+    });
+  </script>
+</body>
+</html>

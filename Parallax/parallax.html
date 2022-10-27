@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Parallax</title>
+</head>
+<br></br>
+<h1 class="heade center red-text">Parallax</h1>
+<body>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img class="responsive-img" src="images/tay5.jpg" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header red-text center">Taylor Swift</h2>
+      <a class="btn grey darken-3 waves-effect waves-light"
+       onclick="M.toast({html: 'Creative Web Design',
+       inDuration: 1000,
+       completeCallback: function () {
+        alert('Your toast was dismissed');
+       },
+       classes: 'rounded'
+      })">Toast</a>
+      <a class="btn tooltipped amber" data-position="Bottom" data-tooltip="I am a tooltip">Hover me</a>
+      <p> 
+        Taylor Alison Swift is an American singer-songwriter. Her discography spans multiple genres and 
+        her narrative songwriting—often inspired by her personal life—has received critical praise and 
+        widespread media coverage.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img class="responsive-img" src="images/tayl1.jpg" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header red-text center">Midnight Album</h2>
+      <a href="https://store.taylorswift.com/products/midnights-digital-album" class="btn grey darken-3 waves-effect waves-light" 
+      onclick="">Read more</a>
+      <p>Midnights is the tenth studio album by American singer-songwriter Taylor Swift, released on October 21, 2022, 
+        via Republic Records. Announced at the 2022 MTV Video Music Awards, the album marks Swift's first body of new 
+        work since her 2020 albums Folklore and Evermore.</p>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      //Init Parallax
+    $('.parallax').parallax({
+      responsiveThreshold: 0
+    });
+    // Init Tooltip
+    $('.tooltipped').tooltip({
+      exitDelay: 1000
+    });
+  });
+  </script>
+</body>
+</html>
